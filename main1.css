@@ -1,0 +1,43 @@
+
+* {
+    box-sizing: border-box;
+}
+
+header, footer{
+	border: 1px solid black;
+	padding: 15px;
+}
+
+.column {
+	float: right;
+	padding: 15px;
+	height: 400px
+}
+
+.left{
+	width: 75%;
+	border: 1px solid black;
+}
+
+.right{
+	width: 25%;
+	border: 1px solid black;
+}
+
+.menu {
+	text-align: center;
+	background-color: #e5e5e5;
+	padding: 15px;
+  	margin-bottom: 15px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media only screen and (max-width:1000px) {
+  .menu, .colunm, .right, .left, .row {
+    width:100%;
+  }
+}
